@@ -24,3 +24,15 @@
     text-transform: uppercase;
     padding-top: 5em;
 }
+
+@mixin tablet {
+    @media screen and (max-width: $srednji_break) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: $mali_break) {
+        @content;
+    }
+}
